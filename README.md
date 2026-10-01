@@ -161,6 +161,9 @@ The control circuit is:
                          GND
 
 BBB P9.23 ───── 1kΩ ───── B
+                      |
+                     10k // FOR ESP32
+BBB P9.1 / P9.2 ───── GND 
 ```
 
 The 10 kΩ resistor is a pull-up resistor. When the BD139 is OFF, the relay `IN` signal is pulled to approximately 5 V. When the BD139 is ON, it pulls the relay `IN` signal to GND.
